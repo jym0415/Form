@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/962d66e7d6.js" crossorigin="anonymous"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="form.min.css">
+
+</head>
+<body>
+     
+    
+
+   <form action="http://www.naver.com" method="post" name="contactform" id="contactform">
+    <!-- method 의 값을 post와 get을 넣어서 제안하기버튼을 눌러서 확인해보세요. -->
+        <ul>
+            <li class="labeltext">
+                <label for="companynm" class="strong">회사명</label>
+                <input type="text" id="companynm" name="companynm">
+            </li>
+           
+            <li class="rabio">
+                <div class="title"><strong class="strong">포지션</strong><span>*하나만 선택해주세요</span></div>
+                <ul class="position d-flex w-100 align-center" >
+                    <li><input type="radio"   name="position" id="position1" value="s" checked>
+                        <label for="position1">기획/마케팅</label></li>
+                    <li><input type="radio"   name="position" id="position2" value="p">
+                        <label for="position2">퍼블리셔</label></li>
+                    <li><input type="radio"   name="position" id="position3" value="d">
+                        <label for="position3">디자인</label></li>
+                    <li><input type="radio"   name="position" id="position4" value="m">
+                        <label for="position4">영업</label></li>
+                </ul>
+            </li>
+            <li>
+                <div class="title"><strong  class="strong">희망업무 능력순위</strong><span>*포지션의 퍼블리셔인 경우에만 해당됩니다</span></div>
+                <ul class="hopeability d-flex w-100 align-center" >
+                    <li><input type="text" maxlength="1" size="1"  name="ability[0]" id="ability1">
+                        <label for="ability1">html/css</label></li>
+                    <li><input type="text" maxlength="1" size="1"  name="ability[1]" id="ability2">
+                        <label for="ability2">jQuery</label></li>
+                    <li><input type="text" maxlength="1" size="1"  name="ability[2]" id="ability3">
+                        <label for="ability3">Node & mySQL</label></li>
+                    <li><input type="text" maxlength="1" size="1"  name="ability[3]" id="ability4">
+                        <label for="ability4">React</label></li>
+                </ul>           
+            </li>
+            <li class="labeltext d-inline-block">
+                <label for="hd"  class="strong">담당자연락처</label>
+                <input type="text" id="hd" name="hd" required  placeholder="010-0000-0000">
+            </li>
+            <li class="agree border0 checkbox">
+                <input type="checkbox"  id="agree">              
+                <label for="agree"><span  class="strong">개인정보정책</span></label>
+            </li>
+        </ul>
+        <input type="submit" value="제안하기">
+   </form>
+
+  
+</body>
+</html>

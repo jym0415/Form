@@ -1,0 +1,139 @@
+/* font-family: 'NanumSquareRoundLight';
+font-family: 'NanumSquareRound';
+font-family: 'NanumSquareRoundBold';
+font-family: 'NanumSquareRoundExtraBold'; */
+:root {
+  --bs-fontl: 'NanumSquareRoundL';
+  --bs-fontb: 'NanumSquareRoundB';
+  --bs-fonteb: 'NanumSquareRoundEB';
+  --bs-fontr: 'NanumSquareRound';
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.border0 {
+  border-width: 0 !important;
+}
+
+.strong {
+  font-family: var(--bs-fonteb);
+}
+
+#contactform {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1;
+  font-family: var(--bs-fontr);
+  font-size: 1.4rem;
+}
+
+#contactform input {
+  border: 0;
+}
+
+#contactform input:focus {
+  outline: none;
+}
+
+#contactform li {
+  border: 3.5px solid #222;
+  margin: 0.5em 0;
+  padding: 1em 1.3em;
+  border-radius: 3.5px;
+}
+
+#contactform li .title {
+  margin-bottom: 1em;
+}
+
+#contactform li .title strong {
+  margin-right: 1em;
+  font-weight: normal;
+}
+
+#contactform li .title span {
+  font-size: 0.65em;
+}
+
+#contactform li li {
+  border: 0;
+  margin: 0  1em  0  0;
+  padding: 0;
+}
+
+#contactform li li label {
+  font-size: 0.8em;
+}
+
+#contactform li .hopeability input {
+  border: 3px solid #222;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 3px;
+}
+
+#contactform li .position label:before {
+  content: "\f111";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.8em;
+}
+
+#contactform li .position input:checked + label:before {
+  content: "\f192";
+  color: red;
+}
+
+#contactform li [type='checkbox'],
+#contactform li [type='radio'] {
+  display: none;
+}
+
+#contactform .agree {
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+#contactform .agree .strong {
+  font-size: 0.8em;
+  font-family: var(--bs-fontr);
+}
+
+#contactform .agree label:before {
+  content: "\f111";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.8em;
+}
+
+#contactform .agree input:checked + label:before {
+  content: "\f192";
+}
